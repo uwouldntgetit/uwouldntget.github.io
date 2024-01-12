@@ -29,7 +29,7 @@
     <link href="./css/style.css" rel="stylesheet">
 
     <!-- Favicon -->
-    <link rel="icon" href="./assets/images/favicon.png">
+    <!-- <link rel="icon" href="./assets/images/favicon.png"> -->
 </head>
 <body>
     
@@ -53,15 +53,15 @@
                         <a class="nav-link active" aria-current="page" href="#header">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">APE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servizi</a>
+                        <a class="nav-link" href="#info-ape">APE</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#plans">Offerte</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faq">Domande Frequenti</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" href="#">Dropdown</a>
                         
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
@@ -71,7 +71,7 @@
                             <li><div class="dropdown-divider"></div></li>
                             <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contatti</a>
                     </li>
@@ -127,7 +127,7 @@
     
 
     <!-- About -->
-    <section class="about d-flex align-items-center text-light py-5" id="info-APE">
+    <section class="about d-flex align-items-center text-light py-5" id="info-ape">
         <div class="container" >
             <div class="row d-flex align-items-center">
                 <div class="col-lg-7" data-aos="fade-right">
@@ -240,7 +240,7 @@
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
                             <p>Planimetria Catastale</p>
                         </div>
-                        <h4 class="py-3">199€*</h4>
+                        <h4 class="py-3">Da 199€*</h4>
                         <div class="my-3">
                             <a class="btn" href="#your-link" >Sceglilo</a>
                         </div>
@@ -318,7 +318,7 @@
                             <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
                             <p>Planimetria Catastale</p>
                         </div>
-                        <h4 class="py-3">Da 249€</h4>
+                        <h4 class="py-3">Da 249€*</h4>
                         <div class="my-3">
                             <a class="btn" href="#your-link" >Sceglilo</a>
                         </div>
@@ -379,10 +379,14 @@
 
 
 
-    <!-- Work -->
-    <section class="faq d-flex align-items-center py-5" >
+    <!-- FAQ -->
+    <section class="faq d-flex align-items-center py-5" id="faq">
         <div class="container-fluid text-light">
-            <div class="row">
+            <div class="row d-flex flex-column align-items-center">
+                <div class="text-center pb-4" >
+                    <p>Scopri di piu' sull'APE</p>
+                    <h2 class="py-2">Domande Frequenti</h2>
+                </div>
                 <div class="accordion accordion-flush" id="faq-accordion">
                     <div class="accordion-item bg-transparent">
                         <h2 class="accordion-header py-2" id="headingOne">
@@ -396,9 +400,9 @@
                         </div>
                         </div>
                     </div>
-                    <div class="accordion-item">
+                    <div class="accordion-item bg-transparent">
                         <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             SECONDA DOMANDA
                         </button>
                         </h2>
@@ -410,7 +414,7 @@
                     </div>
                     <div class="accordion-item bg-transparent">
                         <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button collapsed bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             TERZA DOMANDA
                         </button>
                         </h2>
@@ -423,7 +427,7 @@
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </section> <!-- end of work -->
+    </section> <!-- end of FAQ -->
 
 
     <!-- Contact -->
