@@ -67,21 +67,22 @@ li {
 .about,
 .services,
 .plans,
-.work,
+.faq,
 .contact {
 	height: 110vh;
+	/* min-height: fit-content; */
 	position: relative;
 }
 
 .services,
-.work,
+.about,
 .contact,
 .testimonial,
 .footer {
   	background-color: var(--primary);
 }
 
-.about,
+.faq,
 .plans,
 .company,
 .newsletter,
@@ -98,7 +99,7 @@ li {
 .home .fas,
 .plans .far,
 .information .fas,
-.work .fas,
+.faq .fas,
 .services .fas,
 .location .far,
 .location .fas {
@@ -124,6 +125,7 @@ li {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
 
 
 /**********************/
@@ -362,6 +364,9 @@ li {
 	border-radius: 0;
 	border: 2px solid white;
 }
+.card.sovrapprezzi {
+	height: 250px;
+}
 
 .services .card:hover {
 	border: 10px solid;
@@ -372,6 +377,13 @@ li {
 	box-shadow: 5px 5px 0px 0px #0ee951;
 }
 
+.services {
+	height: auto;
+}
+
+.container-sovrapprezzi {
+	justify-content: center;
+}
 
 /*****************/
 /*     Plans     */
@@ -379,6 +391,11 @@ li {
 .plans .card {
 	padding: 20px;
 	border: 2px solid white;
+}
+
+/* This way I can add a lot of options */
+.plans {
+	height: auto;
 }
 
 
@@ -513,6 +530,25 @@ li {
 	padding-bottom: 0.775rem;
 }
 
+/******************** */
+/* 		FAQ		 */
+/******************** */
+.accordion-header {
+	border: 2px solid	rgb(147, 147, 147);
+}
+
+.accordion-header {
+	background-color: var(--primary);
+}
+
+.faq {
+	color: white
+}
+
+.accordion-button:not(.collapsed) {
+	color: white;
+	border: none;
+}
 
 /******************************/
 /*     Back To Top Button     */
@@ -606,7 +642,7 @@ li {
 /*************************/
 @media only screen and (max-width: 1024px) {
 	.services,
-	.work,
+	.faq,
 	.testimonial,
 	.about,
 	.contact,
