@@ -127,7 +127,9 @@ li {
 	-webkit-text-fill-color: transparent;
 }
 
-
+.bg-transparent-important{
+	background-color: transparent!important;
+}
 
 /**********************/
 /*     Navigation     */
@@ -399,6 +401,10 @@ li {
 	height: auto;
 }
 
+.list-group-item {
+	color: white;
+	border: var(--secondary) !important;
+}
 
 /************************/
 /*     Testimonials     */
