@@ -68,7 +68,8 @@ li {
 .services,
 .plans,
 .faq,
-.contact {
+.contacta,
+.pruchaseForm{
 	height: 110vh;
 	/* min-height: fit-content; */
 	position: relative;
@@ -665,6 +666,7 @@ li {
 	.testimonial,
 	.about,
 	.contact,
+	.purchaseForm,
 	.plans {
 		height: 100%;
 	}
