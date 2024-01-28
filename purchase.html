@@ -97,7 +97,7 @@
 
 
     <!-- Contact -->
-    <form class="contact d-flex align-items-center py-5" id="purchaseForm">
+    <form class="contact d-flex align-items-center py-5" id="purchaseForm" onsubmit="emailSend(); reset(); return false">
         <div class="container-fluid text-light">
             <div class="row d-flex justify-content-center align-items-center px-lg-5" data-aos="fade-down">
                 <div style="width:90%">
@@ -111,12 +111,12 @@
                             <div class="form-group py-2">
                                 <label class="form-label" for="typePurchase">Piano Scelto</label>
                                 <select class="form-select" id="typePurchase">
-                                    <option value="1">Residenziale 149€</option>
-                                    <option value="2">Residenziale 159€</option>
-                                    <option value="3">Residenziale da 199€</option>
-                                    <option value="4">Non Residenziale 179€</option>
-                                    <option value="5">Non Residenziale 189€</option>
-                                    <option value="6">Non Residenziale da 249€</option>
+                                    <option value="Residenziale 149€">Residenziale 149€</option>
+                                    <option value="Residenziale 159€">Residenziale 159€</option>
+                                    <option value="Residenziale da 199€">Residenziale da 199€</option>
+                                    <option value="Non Residenziale 179€">Non Residenziale 179€</option>
+                                    <option value="Non Residenziale 189€">Non Residenziale 189€</option>
+                                    <option value="Non Residenziale da 249€">Non Residenziale da 249€</option>
                                 </select>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                         <div class="row" >
                             <div class="col-lg-6 form-group py-2">
                                 <!-- <label for="firstName" class="form-label">Nome</label> -->
-                                <input type="text" class="form-control form-control-input" id="sezCatastale" placeholder="Sezione Catastale(Se Presente)">
+                                <input type="text" class="form-control form-control-input" id="sezCatastale" placeholder="Sezione Catastale" required>
                             </div>
                             <div class="col-lg-6 form-group py-2">
                                 <!-- <label for="firstName" class="form-label">Nome</label> -->
@@ -177,21 +177,21 @@
                             </div>   -->
                             <div class="form-group py-2a col-lg-6">
                                 <!-- <label class="form-label" for="typePurchase">Piano Scelto</label> -->
-                                <select class="form-select form-control form-control-input" id="typePurchase">
-                                    <option value="1">Cene</option>
-                                    <option value="2">Albino</option>
-                                    <option value="3">Nembro</option>
-                                    <option value="4">Colzate</option>
-                                    <option value="5">Vertova</option>
-                                    <option value="6">Fiorano al Serio</option>
-                                    <option value="7">Gazzaniga</option>
-                                    <option value="8">Alzano Lombardo</option>
+                                <select class="form-select form-control form-control-input" id="buildingLocation">
+                                    <option value="Cene">Cene</option>
+                                    <option value="Albino">Albino</option>
+                                    <option value="Nembro">Nembro</option>
+                                    <option value="Colzate">Colzate</option>
+                                    <option value="Vertova">Vertova</option>
+                                    <option value="Fiorano">Fiorano al Serio</option>
+                                    <option value="Gazzaniga">Gazzaniga</option>
+                                    <option value="Alzano Lombardo">Alzano Lombardo</option>
                                 </select>
                             </div>
                         </div>
                     </div>
                     <div class="my-3">
-                        <button class="btn form-control-submit-button" type="submit">Submit</button>
+                        <button class="btn form-control-submit-button" type="submit" name="submit">Submit</button>
                     </div>
                 </div> <!-- end of div -->
             </div> <!-- end of col -->
@@ -264,5 +264,7 @@
     <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
     <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
     <script src="./js/script.js"></script>  <!-- Custom scripts -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/sendEmail.js"></script>
 </body>
 </html>
