@@ -1,4 +1,4 @@
-function emailSend(){
+function emailSendPurchase(){
     console.log("Inside");
 
     let pianoScelto = document.getElementById("typePurchase").value;
@@ -37,6 +37,34 @@ function emailSend(){
         message => {
             if(message == "OK"){
                 alert("L'email e' stata inviata con successo")
+            }
+            else {
+                alert("Problema nell'invio del form")
+                console.log(message);
+            }
+        }
+    );
+}
+
+function sendEmailContacts(){
+    let name = document.getElementById("name").value;
+    let surname = document.getElementById("surname").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    var messageBody = "Nome: " + name + "<br>Cognome: " + surname +
+                    "<br>Email: " + email + "<br>Messaggio: " + message;
+    
+    Email.send({
+        SecureToken : "e1dcb547-d194-4526-a7c2-900c44d4be6e",
+        To : 'contacts@digitalstorm.site',
+        From : "federicogiudici14@gmail.com",
+        Subject : "Messagio da un cliente",
+        Body : messageBody
+    }).then(
+        message => {
+            if(message == "OK"){
+                alert("Il form e' stata inviata con successo")
             }
             else {
                 alert("Problema nell'invio del form")
