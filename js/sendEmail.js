@@ -29,7 +29,7 @@ function emailSendPurchase(){
 
     Email.send({
         SecureToken : "e1dcb547-d194-4526-a7c2-900c44d4be6e",
-        To : 'contacts@digitalstorm.site',
+        To : 'studioapefb@gmail.com',
         From : "federicogiudici14@gmail.com",
         Subject : "Compilazione modulo acquisto",
         Body : messageBody
@@ -57,7 +57,7 @@ function sendEmailContacts(){
     
     Email.send({
         SecureToken : "e1dcb547-d194-4526-a7c2-900c44d4be6e",
-        To : 'contacts@digitalstorm.site',
+        To : 'studioapefb@gmail.com',
         From : "federicogiudici14@gmail.com",
         Subject : "Messagio da un cliente",
         Body : messageBody
