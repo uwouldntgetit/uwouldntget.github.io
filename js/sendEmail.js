@@ -29,7 +29,7 @@ function emailSendPurchase(){
 
     Email.send({
         SecureToken : "e1dcb547-d194-4526-a7c2-900c44d4be6e",
-        To : 'studioapefb@gmail.com',
+        To : 'studioape@studioape.eu',
         From : "federicogiudici14@gmail.com",
         Subject : "Compilazione modulo acquisto",
         Body : messageBody
@@ -57,14 +57,14 @@ function sendEmailContacts(){
     
     Email.send({
         SecureToken : "e1dcb547-d194-4526-a7c2-900c44d4be6e",
-        To : 'studioapefb@gmail.com',
+        To : 'studioape@studioape.eu',
         From : "federicogiudici14@gmail.com",
         Subject : "Messagio da un cliente",
         Body : messageBody
     }).then(
         message => {
             if(message == "OK"){
-                alert("Il form e' stata inviata con successo")
+                alert("Il form e' stato inviato con successo")
             }
             else {
                 alert("Problema nell'invio del form")
